@@ -26,7 +26,7 @@ public class CourseController {
 	private CourseRepository courseRepository;
 	
 	@GetMapping("/courses")
-	public List getCourseList() {
+	public List<Course> getCourseList() {
 		List<Course> courseList = courseRepository.findAll();
 		return courseList;
 	}
